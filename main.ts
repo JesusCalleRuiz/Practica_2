@@ -19,7 +19,7 @@ if (!MONGO_URL) {
   Deno.exit(1);
 }
 
-await mongoose.connect(MONGO_URL);
+await mongoose.connect("mongodb+srv://jesuscalleruiz:bXtR3dANxBRhh5Fk@cluster0.qeuki4l.mongodb.net/TiendaDB?retryWrites=true&w=majority");
 const app = express();
 app.use(express.json());
 app
